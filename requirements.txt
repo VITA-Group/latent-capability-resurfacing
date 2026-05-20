@@ -1,0 +1,21 @@
+# torch is installed BEFORE these requirements by setup.sh with a CUDA-matched
+# wheel from https://download.pytorch.org/whl/<cu_tag>. Do not add torch here
+# or pip may resolve to a different build and break CUDA.
+
+transformers>=4.45.0
+datasets>=2.20.0
+accelerate>=0.34.0
+deepspeed>=0.15.0
+numpy>=1.26
+tqdm>=4.66
+
+# Generation
+vllm>=0.6.0
+
+# Evaluation
+lm-eval>=0.4.4
+
+# Plotting (optional, used by audit.py --save_histogram)
+matplotlib>=3.8
+
+# llamafactory itself is installed from source by setup.sh (editable mode).
