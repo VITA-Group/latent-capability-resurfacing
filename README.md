@@ -101,15 +101,6 @@ output/{run_name}/checkpoint-*/                              # stage 4
 evals/{model_short}/{base|run_name/checkpoint-*}/            # evaluate.sh
     {benchmark}_fs{N}/results.json
 ```
-
-## What is NOT in this release
-
-- Pythia memorization-extraction experiments (Section 5)
-- Semantic similarity audit (Figure 4, `llama-embed-nemotron-8b`)
-- Per-corpus NLL computation under arbitrary scorer models (Figure 6)
-- Common-Corpus baseline preparation
-- Plotting code
-
 ## Reproducing Qwen2.5-0.5B at τ=1.25 (paper main run)
 
 Defaults in `pipeline.sh` are pre-set to this configuration. Run
