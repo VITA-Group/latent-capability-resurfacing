@@ -1,9 +1,7 @@
 # Latent Capability Resurfacing — Code
 
 Reference implementation of the prompt-free BOS-only self-training pipeline
-described in the paper, restricted to Qwen and LLaMA families. Pythia
-experiments, semantic-similarity audit, and plotting are not in this release.
-
+described in the paper, restricted to Qwen and LLaMA families. 
 ## Repository layout
 
 ```
