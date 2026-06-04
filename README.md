@@ -93,9 +93,3 @@ output/{run_name}/checkpoint-*/                              # stage 4
 evals/{model_short}/{base|run_name/checkpoint-*}/            # evaluate.sh
     {benchmark}_fs{N}/results.json
 ```
-## Reproducing Qwen2.5-0.5B at τ=1.25 (paper main run)
-
-Defaults in `pipeline.sh` are pre-set to this configuration. Run
-`pipeline.sh`, accept the defaults at every prompt. After training
-completes, run `evaluate.sh` and accept the defaults (Suite A) to evaluate
-on the paper-core 7 benchmarks at zero-shot.
