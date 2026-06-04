@@ -38,18 +38,12 @@ one confirmation, then run.
    supporting CUDA 12.4, A100 GPUs).
 3. Installs **deepspeed 0.16.9**.
 4. Installs the remaining pinned requirements (`requirements.txt`).
-5. Clones **LLaMA-Factory** to `third_party/LLaMA-Factory` at the pinned
-   commit `246192abd2371d9729cb8cf256061d0a070517d4` and installs it editable
-   (without the `[torch]` and `[deepspeed]` extras so our pins are preserved).
+5. Clones **LLaMA-Factory** to `third_party/LLaMA-Factory`.
 6. Runs a smoke test: imports, `torch.cuda.is_available()`, GPU count, a
    small GPU matmul, and CLI availability for `llamafactory-cli` and `lm_eval`.
 
 The cu128 wheel needs an NVIDIA driver supporting CUDA ≥ 12.4. If your
 driver is older the script will warn and torch will likely fail to import.
-
-Neither `pipeline.sh` nor `evaluate.sh` auto-activate any environment.
-Activate the conda env yourself before running them. If you forget, they
-will warn and prompt before continuing.
 
 ## pipeline.sh
 
